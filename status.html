@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="overflow: hidden;">
+    <!--Navbar-->
+    <nav class=" d-flex bg-primary border-color border-bottom flex-align-center padding-medium view-height-10">
+        <button onclick="onToggle()" class="btn border-none bg-transparent "><img src="img/menu.png" height="20" width="30"ssss
+                alt="menu"></button>
+        <a href=""><img src="img/gwamlogo.png" width="40" alt="logo"><a><span><h3>Great Wall Arts </h3>
+    </nav>
+
+    <!--Sidebar-->
+    <div class="container">
+        <div class="d-flex bg-primary view-height-100">
+            <div class="sidebar text-black border-right text-center border-color ">
+                <a href="index.html" class="dashboard">
+                    <h2> Dashboard</h2>
+                </a>
+                <h2>Learning <br>Management</h2>
+                <hr class="border-color border-bottom seperator">
+                <a href="schedule.html" class="text-black">
+                    <h3> Training Schedule</h3>
+                </a>
+                <a href="assessment.html" class="text-black">
+                    <h3> Training Assessment</h3>
+                </a>
+                <h2>Performance <br>Management</h2>
+                <hr class="border-color border-bottom seperator">
+                <a href="attendance stat.html" class="text-black">
+                    <h3> Attendance Statistics</h3>
+                </a>
+                <a href="#.html" class="text-black">
+                    <h3> Performance Statistics</h3>
+                </a>
+                <a href="evaluation.html" class="text-black">
+                        <h3> Performance Evaluation</h3>
+                    </a>
+                    <a href="status.html" class="text-black">
+                        <h3>Employee Status</h3>
+                    </a>
+            </div>
+            <!--End Sidebar-->
+                
+            <!--Main Content-->
+            <div class="main w-100" style="overflow: auto; padding-bottom: 100px;">
+                <h1 class="texts">Employee Status</h1>
+                <div class="card bg-primary padding-large text-black1" style="width: 47%; margin-left: 23%; align-items: center; align-content: center;">
+
+                    <!-- Employee Name -->
+            <label for="employee-name">Employee Name:</label>
+            <input type="text" id="employee-name" name="employee_name" required>
+
+            <!-- Department (Dropdown with choices) -->
+            <label for="department">Department</label>
+            <select id="department" name="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="hr">Human Resources</option>
+                <option value="it">Information Technology</option>
+                <option value="finance">Finance</option>
+                <option value="marketing">Marketing</option>
+                <option value="operations">Operations</option>
+                <option value="sales">Sales</option>
+            </select><br>
+
+            <!-- Position -->
+             <br> <label for="position">Position:</label>
+            <input type="text" id="position" name="position" required>
+
+            <!-- Training/Evaluation -->
+            <label for="training">Training/Evaluation:</label>
+            <input type="text" id="training" name="training" required>
+
+            <!-- Status (Dropdown with updated choices) -->
+            <label for="status">Status</label>
+            <select id="status" name="status" required>
+                <option value="ongoing">Ongoing</option>
+                <option value="completed">Completed</option>
+            </select>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn-submit">Submit</button>
+                </div>
+</body>
+<script src="script.js"></script>
+
+
+</html>
